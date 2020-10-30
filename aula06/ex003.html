@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color:rgb(197, 138, 202);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World</h1>
+
+    <script>
+        var n1 = Number.parseInt(prompt('Digite um número: '))
+// prompt recebe como string, assim ao utilizar + > irá concatenar e não somar
+        var n2 = Number.parseInt(prompt('Digite outro número: '))
+        var soma = n1 + n2
+//Number é quando precisamos forçar o tipo para inteiro ou float, mas podemos usar apenas Number
+// para converter de numero para string String(n) * melhor forma ou n.toString()
+// `O aluno ${nome} tem ${idade} anos de idade` > interpolação de variáveis 
+        alert('A soma entre os dois números é: ' + soma)
+    </script>
+</body>
+</html>
